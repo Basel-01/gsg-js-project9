@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dice Game</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to my Dice game<br>You must reach <span class="final-score-value"></span> total points to Win!</h1>
+  </header>
+
+  <div class="game">
+
+    <section class="dice"></section>
+  
+    <section class="players">
+      <div class="player player1 turn">
+        <h2></h2>
+        <p class="turn-total">Your Turn Total : <span>0</span></p>
+        <p class="total-score">Your Total Score : <span>0</span></p>
+      </div>
+      <div class="player player2">
+        <h2></h2>
+        <p class="turn-total">Your Turn Total : <span>0</span></p>
+        <p class="total-score">Your Total Score : <span>0</span></p>
+      </div>
+    </section>
+  
+    <section class="btns">
+      <button class="roll">Roll Dice</button>
+      <button class="hold">Hold</button>
+      <button class="new-game">New Game</button>
+    </section>
+
+  </div>
+
+  <section class="details">
+    <div class="container">
+      <input type="text" class="player1-name" placeholder="Player One Name">
+      <input type="text" class="player2-name" placeholder="Player Two Name">
+      <input type="number" class="final-socer" placeholder="Final Score">
+      <button class="start-game">Start Game</button>
+    </div>
+  </section>
+
+  <section class="colors">
+    <span class="active" data-color="#f44336"></span>
+    <span data-color="#e91e63"></span>
+    <span data-color="#9c27b0"></span>
+    <span data-color="#3f51b5"></span>
+  </section>
+
+  <audio class="win" src="audio/win.wav" preload="auto"></audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
